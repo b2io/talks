@@ -28,27 +28,46 @@ Presented by:
 
 ---
 
-## Building a Living Styleguide
+## Living Styleguide
 
- - Using a Styleguide to create a common design language
+Note:
+- Hello! 
+- I am a UX developer on the Center of Excellence team
+- One of my goals as part of this team is to facilitate collaboration and communication between designers and developers as we work together
+- One way I'm accomplishing this feat is by spearheading the Living Styleguide initiative
+
+----
+
+## Living Styleguide
+
+ - Creates a common design language
+
+Note:
+- Communication is tough, especially across disciplines
+- The way that we as developers think of UI components can often differ wildly from how designers think about them
+- One way to find common ground is to break designs down into components and set standards around them
+ - maybe show some form fields, buttons
+
+----
+
+## Living Styleguide
+
+ - Creates a common design language
  - Composing a UI from the ground up
- - What does Styleguide-driven development mean for NetJets
+
+Note:
+- Once we have the basic components of a design figured out, we can use them as building blocks for larger structures in our apps
+ - show the form fields assembled into a form
+- Here's an example of how we're building out components for the ETM Proof of Concept we're working on
+ - show the inventory list components separately and together
 
 ----
 
-### Using a Styleguide
+## Living Styleguide
 
-> Caitlin has some deep thoughts.
-
-----
-
-### Composing a UI
-
-> Thoughts, we've got them.
-
-----
-
-### Styleguide-driven development
+ - Creates a common design language
+ - Composing a UI from the ground up
+ - How will Styleguide-driven development help NetJets
 
 > The thrilling conclusion!
 
