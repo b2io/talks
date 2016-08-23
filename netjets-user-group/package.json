@@ -4,9 +4,10 @@
   "description": "A talk given at NetJets on 8/24/16",
   "scripts": {
     "prestart": "npm install",
-    "start": "reveal-md slides.md --theme puzzle --highlightTheme github"
+    "start": "reveal-md slides.md --title \"NetJets User Group\""
   },
   "dependencies": {
+    "highlight.js": "9.6.0",
     "reveal-md": "0.0.30"
   }
 }
