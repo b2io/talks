@@ -46,8 +46,6 @@ Note:
 <!-- .slide: data-background="./images/slide-content-bg2.png" data-background-size="1420px" -->
 ## Base Two
 
-<img src="http://i.giphy.com/aAvx6Sjik0cta.gif" width="250" height="150"></img>
-
 - Expertise in web development <!-- .element: class="fragment" -->
   - Also in pizza purchasing <!-- .element: class="fragment" -->
 - JavaScript, HTML, CSS, build process, best practices <!-- .element: class="fragment" -->
