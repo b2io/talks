@@ -73,7 +73,7 @@ We talk a lot about UX, but let's talk about DX.
 
 ## Component-driven Development
 
-![Lioness Stalking](images/dx--focus.gif)
+![Lioness Stalking](images/dx__focus.gif)
 
 > Focus on the task at hand
 
@@ -166,17 +166,20 @@ Note:
 ### Wait... what?!
 
 ```ts
+// Annotations?!
 @Input()
 public name: string;
 ```
 <!-- .element: class="fragment" -->
 
 ```js
+// Importing SASS files?!
 import '@netjets/styleguide/icon.scss';
 ```
 <!-- .element: class="fragment" -->
 
 ```js
+// HTML in our JS?!
 <span className={`netjets-${name}`}></span>
 ```
 <!-- .element: class="fragment" -->
@@ -191,29 +194,30 @@ Note:
 
 ## Front-end Tooling
 
-![Flux Capacitor](images/dx--tools.gif)
+![Flux Capacitor](images/dx__tools.gif)
 
 > Use purpose-built tools
 
 ----
 
-### Chrome DevTools
+### webpack
 
-![Chrome DevTools](images/dx--chrome-devtools.png)
-
-----
-
-### Visual Studio Code
-
-![Visual Studio Code](images/dx--vscode.png)
+![webpack module bundler](images/dx__tools--webpack.png)
 
 ----
 
-## Unidirectional data flow
+## Data Flow
 
-![Not that Flux](images/dx--flux.gif)
+![Not that Flux](images/dx__data.gif)
 
 > Reduce ambient complexity
+
+----
+
+<div class="split-container">
+  <img class="fragment" src="images/dx__data--simple.png" alt="Simple Data Model">
+  <img class="fragment" src="images/dx__data--complex.png" alt="Complex Data Model">
+</div>
 
 ---
 
