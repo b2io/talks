@@ -1,0 +1,12 @@
+{
+  "name": "netjets-user-group",
+  "version": "0.1.0",
+  "description": "A talk given at NetJets on 8/24/16",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "reveal-md slides.md --theme puzzle --highlightTheme github"
+  },
+  "dependencies": {
+    "reveal-md": "0.0.30"
+  }
+}

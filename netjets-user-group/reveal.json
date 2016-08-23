@@ -1,0 +1,6 @@
+{
+    "backgroundTransition": "fade",
+    "controls": true,
+    "progress": true,
+    "transition": "convex"
+}
