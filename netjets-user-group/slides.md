@@ -1,38 +1,39 @@
 <!-- .slide: data-background="./images/intro-slide-bg.png" data-background-size="1320px" -->
 # NetJets User Group
 
-Presented by:
+Presented by: <!-- .element: class="presented-by" -->
 
- * Brad Pearson (NetJets)
- * Caitlin Steinert (Base Two)
- * Drew Miller (Base Two)
+ - Brad Pearson (NetJets) <!-- .element: class="presenter" -->
+ - Caitlin Steinert (Base Two) <!-- .element: class="presenter" -->
+ - Drew Miller (Base Two) <!-- .element: class="presenter" -->
 
 ---
 
-<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px" -->
+<!-- .slide: data-background="./images/slide-content-bg2.png" data-background-size="1420px" -->
 ## Introduction
 
-- Future of web development at NetJets
-- Web Center of Excellence
-- ETM Redesign / Trip Management
+- Future of web development at NetJets <!-- .element: class="fragment" -->
+- Web Center of Excellence <!-- .element: class="fragment" -->
+- ETM Redesign / Trip Management <!-- .element: class="fragment" -->
 
 Note:
 - Hello everyone, thanks for coming to the user group meeting today
 - My name is Brad Pearson - For those who don't know me, I'm a tech lead and I've been working at NJ 4+ years on ETM
-- Also part of the new web CoE effort here at NJ
+- Today, we're going to be talking about the future of web development at NetJets
+- Included in that is a new group called the Web CoE
 - Web CoE is a group of people who are working to move the state of web development forward
 - One of the ways to do that is identifying projects to POC new tools and techniques
 - Current project is a partial ETM redesign where we are 'reinventing' trip management part of ETM
 
-----
+---
 
-<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
+<!-- .slide: data-background="./images/slide-content-bg2.png" data-background-size="1420px" -->
 ## Commitment To Progress
 
-- Web CoE is a commitment to continually improve and stay current
-- Everything is on the table
-- Today is just a starting point
-- Wiki, user group meetings, ad hoc meetings
+- Commit to improvement and staying current <!-- .element: class="fragment" -->
+- Everything is on the table <!-- .element: class="fragment" -->
+- Today is just a starting point <!-- .element: class="fragment" -->
+- Wiki, user group meetings, ad hoc meetings <!-- .element: class="fragment" -->
 
 Note:
 - The web CoE is about trying to research and implement things here at NJ to make web development better and stay current
@@ -42,13 +43,16 @@ Note:
 
 ---
 
-<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
-### Base Two
+<!-- .slide: data-background="./images/slide-content-bg2.png" data-background-size="1420px" -->
+## Base Two
 
-- Expertise in web development (also in pizza purchasing - thanks!)
-- JavaScript, HTML, CSS, build process, best practices
-- Caitlin - styleguide and implementation
-- Drew - web app development 
+<img src="http://i.giphy.com/aAvx6Sjik0cta.gif" width="250" height="150"></img>
+
+- Expertise in web development <!-- .element: class="fragment" -->
+  - Also in pizza purchasing <!-- .element: class="fragment" -->
+- JavaScript, HTML, CSS, build process, best practices <!-- .element: class="fragment" -->
+- Caitlin - styleguide and implementation <!-- .element: class="fragment" -->
+- Drew - web app development <!-- .element: class="fragment" -->
 
 Note:
 - There's a lot of work and we decided to try and find someone outside of NetJets to help us with this effort
@@ -60,9 +64,10 @@ Note:
 - Introduce Caitlin Steinart and Drew Miller
 - Caitlin has been working more with the style side of the project and Drew on the app development side
 - I'll hand it over to Caitlin
+
 ---
 
-<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
+<!-- .slide: data-background="./images/slide-content-bg2.png" data-background-size="1420px" -->
 ## Building a Living Styleguide
 
  - Using a Styleguide to create a common design language

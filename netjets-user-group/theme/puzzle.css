@@ -357,3 +357,18 @@ section.intro.past {
 
 .master05.intro h1:before, .master05.intro h2:before, .master05.intro h3:before {
   color: #69B978; }
+
+  /***********
+  * Custom Stuff
+  ************/
+#netjets-user-group{
+  color: white;
+}
+
+.presented-by{
+  color: white;
+}
+
+.presenter{
+  color: white;
+}
