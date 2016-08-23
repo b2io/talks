@@ -18,34 +18,51 @@ Presented by:
 
 Note:
 - Hello everyone, thanks for coming to the user group meeting today
-- My name is Brad Pearson - For those who don't know me, I'm a tech lead and I've been working for JY 4+ years on ETM
+- My name is Brad Pearson - For those who don't know me, I'm a tech lead and I've been working at NJ 4+ years on ETM
 - Also part of the new web CoE effort here at NJ
 - Web CoE is a group of people who are working to move the state of web development forward
-- Current project is a partial ETM redesign where we are 'reinventing' trip management part of ETM - the part that owner services uses to manage reservations
+- One of the ways to do that is identifying projects to POC new tools and techniques
+- Current project is a partial ETM redesign where we are 'reinventing' trip management part of ETM
 
 ----
 
-<!-- .slide: data-background="./images/slide-content-bg.png" -->
-### Base 2
-
-- Expertise in web development (also in pizza purchasing - thanks!)
-- JavaScript, HTML, CSS, build process, best practices
-- Caitlin - styleguide and implementation
-- Drew - web app development 
-
----
-
-<!-- .slide: data-background="./images/slide-content-bg.png" -->
-### Commitment To Progress
+<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
+## Commitment To Progress
 
 - Web CoE is a commitment to continually improve and stay current
 - Everything is on the table
 - Today is just a starting point
 - Wiki, user group meetings, ad hoc meetings
 
+Note:
+- The web CoE is about trying to research and implement things here at NJ to make web development better and stay current
+- This work is just the starting point - the web CoE goal is to continue to develop better tools and processes in the web dev space
+- Everything is on the table when it comes to how we make web development better
+- Ongoing communication about the web CoE initiatives will be via the wiki, future user group meetings as well as ad hoc department meetings
+
 ---
 
-<!-- .slide: data-background="./images/slide-content-bg.png" -->
+<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
+### Base Two
+
+- Expertise in web development (also in pizza purchasing - thanks!)
+- JavaScript, HTML, CSS, build process, best practices
+- Caitlin - styleguide and implementation
+- Drew - web app development 
+
+Note:
+- There's a lot of work and we decided to try and find someone outside of NetJets to help us with this effort
+- We found and have enlisted the help of a company called Base Two 
+- Software development agency here in Columbus and they also bought the pizza for today
+- The have expertise in core client side web development technologies 
+- Things like JS, HTML, styling, build processes, best practices 
+- Today we have two developers from base two who are working on our styleguide as well as the client side app development for etm redesign project
+- Introduce Caitlin Steinart and Drew Miller
+- Caitlin has been working more with the style side of the project and Drew on the app development side
+- I'll hand it over to Caitlin
+---
+
+<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
 ## Building a Living Styleguide
 
  - Using a Styleguide to create a common design language
@@ -54,28 +71,28 @@ Note:
 
 ----
 
-<!-- .slide: data-background="./images/slide-content-bg.png" -->
+<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
 ### Using a Styleguide
 
 > Caitlin has some deep thoughts.
 
 ----
 
-<!-- .slide: data-background="./images/slide-content-bg.png" -->
+<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
 ### Composing a UI
 
 > Thoughts, we've got them.
 
 ----
 
-<!-- .slide: data-background="./images/slide-content-bg.png" -->
+<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
 ### Styleguide-driven development
 
 > The thrilling conclusion!
 
 ---
 
-<!-- .slide: data-background="./images/slide-content-bg.png" -->
+<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
 ## Improving the Developer Experience
 
  - Integrating a Styleguide component into your application
@@ -84,28 +101,28 @@ Note:
 
 ----
 
-<!-- .slide: data-background="./images/slide-content-bg.png" -->
+<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
 ### Integrating a Styleguide component
 
 > Drew has some deep thoughts.
 
 ----
 
-<!-- .slide: data-background="./images/slide-content-bg.png" -->
+<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
 ### Unlocking the ecosystem
 
 > Thoughts, we've got them.
 
 ----
 
-<!-- .slide: data-background="./images/slide-content-bg.png" -->
+<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px" -->
 ### Unidirectional data flow
 
 > The thrilling conclusion!
 
 ---
 
-<!-- .slide: data-background="./images/slide-content-bg.png" -->
+<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
 ## Conclusion
 
 > We're around, come say hi (and ask questions)
