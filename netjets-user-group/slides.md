@@ -76,6 +76,9 @@ Note:
 
 ![Lioness Stalking](images/dx__focus.gif)
 
+Note:
+- First, let's talk about focus...
+
 ----
 
 ### How does a Styleguide focus us?
@@ -194,14 +197,14 @@ Note:
 ![Rube Goldberg Machine](images/dx__tools.gif)
 
 Note:
-- When we talk about tools, especially front-end tooling,
-- You may be imaging something like this...
+- So now let's talk a bit about tools...
+- When we talk about tools, especially front-end tooling, you may be imaging something like this...
 
 ----
 
 ### webpack
 
-![webpack module bundler](images/dx__tools--webpack.png)
+![webpack module bundler](images/dx__tools--webpack.jpg)
 
 Note:
 - There is an amazing diversity of awesome tools out there
@@ -286,9 +289,9 @@ Note:
 
 ### Cognitive overhead
 
-> The logical connections or jumps your brain has to make in order to understand or contextualize the thing you’re looking at.
+> Logical connections or jumps your brain has to make in order to understand or contextualize the thing you’re looking at.
 
--David Demaree, Web Designer
+-David Demaree, Product Manager at Adobe
 
 Note:
 - This quote is in the context of UX.
@@ -353,14 +356,14 @@ Note:
 
 ----
 
-### But we're not using Flux!
+### "But we're not using Flux!"
 
 - This is just one way to reduce cognitive overhead
 - Improve the DX on your project when you can
 
 Note:
 - Over the lifetime of a product, maintenance costs dramatically outweigh initial investment.
-- Do that developer 2 years from now a favor and make it easy to reason about, easy to enhance, easy to fix.
+- Do that developer 2 years from now a favor and make your project easy to reason about, easy to enhance, easy to fix.
 
 ---
 
