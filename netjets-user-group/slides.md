@@ -62,28 +62,27 @@ Presented by:
 
 Your productivity is a precious commodity; use it wisely.
 
-1. Focus on the task at hand <!-- .element: class="fragment" -->
-2. Use purpose-built tools <!-- .element: class="fragment" -->
-3. Reduce ambient complexity <!-- .element: class="fragment" -->
+1. Focus on the task at hand
+2. Use purpose-built tools
+3. Reduce cognitive overhead
 
 Note: 
-We talk a lot about UX, but let's talk about DX.
+- We talk a lot about UX, but let's talk about DX.
+- Let's talk about three concepts that help us be better developers.
 
 ----
 
-## Component-driven Development
+## Focus on the task at hand
 
 ![Lioness Stalking](images/dx__focus.gif)
 
-> Focus on the task at hand
-
 ----
 
-### How does a _Styleguide_ focus us?
+### How does a Styleguide focus us?
 
-- Styleguide components are just markup and styles <!-- .element: class="fragment" -->
-- Behavior comes from the platform implementation <!-- .element: class="fragment" -->
-- We get to focus on the behavior, not the presentation <!-- .element: class="fragment" -->
+- Styleguide components are just markup and styles
+- Behavior comes from the platform implementation
+- We get to focus on the behavior, not the presentation
 
 Note: 
 - Consume the published styleguide artifacts we can,
@@ -114,9 +113,13 @@ Note:
 }
 ```
 
+Note:
+- Here's some markup/styles from our Styleguide
+- Basic HTML for structure and CSS for presentation
+
 ----
 
-### Angular 2
+### In Angular 2?
 
 ```ts
 import '@netjets/styleguide/icon.scss';
@@ -136,13 +139,12 @@ export default IconComponent;
 
 Note:
 - Implementing that in Angular 2,
-- We import the SASS,
-- We re-use the HTML,
-- And we wrap it in an Angular 2 component
+- We import the SASS directly,
+- We re-use the HTML indirectly
 
 ----
 
-### React
+### In React?
 
 ```js
 import '@netjets/styleguide/icon.scss';
@@ -156,47 +158,44 @@ export default Icon;
 ```
 
 Note:
-- And in React,
-- We import the SASS,
-- We re-euse the HTML,
-- And we wrap it in a React component
+- And again in React,
+- We import the SASS directly,
+- We re-use the HTML indirectly
+- Someone (Caitlin) has done the heavy lifting for us!
 
 ----
 
-### Wait... what?!
+### But wait... what?!
 
 ```ts
 // Annotations?!
 @Input()
 public name: string;
 ```
-<!-- .element: class="fragment" -->
 
 ```js
 // Importing SASS files?!
 import '@netjets/styleguide/icon.scss';
 ```
-<!-- .element: class="fragment" -->
 
 ```js
-// HTML in our JS?!
+// HTML-ish in our JS?!
 <span className={`netjets-${name}`}></span>
 ```
-<!-- .element: class="fragment" -->
 
 Note:
-- Annotations syntax?
-- Importing SASS?
-- HTML in our JS?
-- How can we get that into our project?
+- Those things aren't normal JavaScript!
+- You can't just do that... can you?
 
 ----
 
-## Front-end Tooling
+## Use purpose-built tools
 
-![Flux Capacitor](images/dx__tools.gif)
+![Rube Goldberg Machine](images/dx__tools.gif)
 
-> Use purpose-built tools
+Note:
+- When we talk about tools, especially front-end tooling,
+- You may be imaging something like this...
 
 ----
 
@@ -204,20 +203,164 @@ Note:
 
 ![webpack module bundler](images/dx__tools--webpack.png)
 
-----
-
-## Data Flow
-
-![Not that Flux](images/dx__data.gif)
-
-> Reduce ambient complexity
+Note:
+- There is an amazing diversity of awesome tools out there
+- Let's talk about one in particular, webpack
+- It's a very _powerful_ tool; which generally means useful and complicated
 
 ----
 
-<div class="split-container">
-  <img class="fragment" src="images/dx__data--simple.png" alt="Simple Data Model">
-  <img class="fragment" src="images/dx__data--complex.png" alt="Complex Data Model">
-</div>
+### webpack
+
+```js
+var path = require('path');
+
+module.exports = {
+  entry: {
+    app: './src/app.js',
+    vendor: './src/vendor.js',
+    polyfills: './src/polyfills.js', 
+  },
+  output: {
+    path: path.join(__dirname, 'dist'),
+    filename: '[name].[chunkhash].bundle.js',
+  },
+  // ...
+};
+```
+
+Note:
+- So what do we have going on here?
+- We point webpack at some entry points,
+- And we tell it how we want to output them,
+- webpack figures out the dependency graph for us.
+
+----
+
+### webpack
+
+```js
+module.exports = {
+  // ...
+  module: {
+    loaders: [
+      {
+        test: /\.jsx?/, // Match files with `.js` or `.jsx` extensions.
+        loader: 'babel', // Convert them from ES6 to our target.
+      },
+      {
+        test: /\.tsx?$/, // Match files with `.ts` or `.tsx` extensions.
+        loader: 'babel!ts', // Convert them from TypeScript to ES6, etc.
+      },
+    ],
+  },
+};
+```
+
+Note:
+- Now we're in another section of our webpack.config.js file.
+- We're telling webpack what types of files we expect to see,
+- And what to do with them once we find them.
+
+----
+
+### webpack
+
+- webpack is purpose-built to efficiently build web apps
+- It unlocks an entire ecosytem of tools for us to use
+
+Note:
+- SASS, TypeScript, ES6, and more...
+
+----
+
+## Reduce cognitive overhead
+
+![Flux Capacitor](images/dx__data.gif)
+
+Note:
+- Cognitive overhead? That's a little vague...
+- What are we talking about here?
+
+----
+
+### Cognitive overhead
+
+> The logical connections or jumps your brain has to make in order to understand or contextualize the thing you’re looking at.
+
+-David Demaree, Web Designer
+
+Note:
+- This quote is in the context of UX.
+- But let's talk about DX.
+- How much do you have to hold in your head to implement a feature? How about to fix a bug?
+
+----
+
+### In the beginning...
+
+![Simple Data Flow](images/dx__data--simple.png)
+
+Note:
+- So you're starting a greenfield project,
+- You've got straightforward use cases,
+- Things are going to be great this time!
+- Let's describe the flow of data in our system.
+
+----
+
+### In the end...
+
+![Complex Data Model](images/dx__data--complex.png)
+
+Note:
+- And then, innevitably, we get here...
+- Anyone used a lot of two-way data-binding in Angular 1?
+- You have a bug over here, but the actual cause is waaaay over there....
+
+----
+
+### Unidirectional data flow
+
+- A lot of complexity is in the flow of our data
+- If we can describe that flow more simply, we can reduce cognitive overhead
+
+Note:
+- A lot of thought and research has gone into this problem.
+- One of the popular solutions is a pattern called Flux; which is Facebook taking an old idea and pretending it's new.
+
+----
+
+### Flux Architecture
+
+![Flux Architecture Diagram](images/dx__data--flux-1.png)
+
+Note:
+- To sum it up, we have the state of our app in our Store
+- That drives how we render our View(s)
+- Actions are dispatched which cause mutations in our Store
+
+----
+
+### Flux Architecture
+
+![Flux Architecture Diagram](images/dx__data--flux-2.png)
+
+Note:
+- You might have Actions coming from a View, or from a background-job, etc
+- So whether or not this is really _new_, it's useful.
+- If we implement this, we have to hold much less in our heads to make a change.
+
+----
+
+### But we're not using Flux!
+
+- This is just one way to reduce cognitive overhead
+- Improve the DX on your project when you can
+
+Note:
+- Over the lifetime of a product, maintenance costs dramatically outweigh initial investment.
+- Do that developer 2 years from now a favor and make it easy to reason about, easy to enhance, easy to fix.
 
 ---
 

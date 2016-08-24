@@ -297,13 +297,3 @@ body {
 /*********************************************
  * OVERRIDES
  *********************************************/
-
-.reveal img.split-left {
-  float: left;
-  max-width: 40%;
-}
-
-.reveal img.split-right {
-  float: left;
-  max-width: 40%;
-}
