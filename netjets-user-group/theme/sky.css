@@ -297,3 +297,24 @@ body {
 /*********************************************
  * OVERRIDES
  *********************************************/
+
+body {
+  background: url(../images/slide-content-bg2.png);
+  background-size: cover;
+}
+
+.reveal .slides .title-slide {
+  color: white;
+}
+
+#netjets-user-group{
+  color: white;
+}
+
+.presented-by{
+  color: white;
+}
+
+.presenter{
+  color: white;
+}

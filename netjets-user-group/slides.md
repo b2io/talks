@@ -1,4 +1,4 @@
-<!-- .slide: data-background="./images/intro-slide-bg.png" data-background-size="1320px" -->
+<!-- .slide: data-background="./images/intro-slide-bg.png" data-background-size="cover" -->
 # NetJets User Group
 
 Presented by: <!-- .element: class="presented-by" -->
@@ -9,7 +9,6 @@ Presented by: <!-- .element: class="presented-by" -->
 
 ---
 
-<!-- .slide: data-background="./images/slide-content-bg2.png" data-background-size="1420px" -->
 ## Introduction
 
 - Future of web development at NetJets <!-- .element: class="fragment" -->
@@ -25,9 +24,8 @@ Note:
 - One of the ways to do that is identifying projects to POC new tools and techniques
 - Current project is a partial ETM redesign where we are 'reinventing' trip management part of ETM
 
----
+----
 
-<!-- .slide: data-background="./images/slide-content-bg2.png" data-background-size="1420px" -->
 ## Commitment To Progress
 
 - Commit to improvement and staying current <!-- .element: class="fragment" -->
@@ -41,9 +39,8 @@ Note:
 - Everything is on the table when it comes to how we make web development better
 - Ongoing communication about the web CoE initiatives will be via the wiki, future user group meetings as well as ad hoc department meetings
 
----
+----
 
-<!-- .slide: data-background="./images/slide-content-bg2.png" data-background-size="1420px" -->
 ## Base Two
 
 - Expertise in web development <!-- .element: class="fragment" -->
@@ -65,7 +62,6 @@ Note:
 
 ---
 
-<!-- .slide: data-background="./images/slide-content-bg2.png" data-background-size="1420px" -->
 ![Image of a bear waving hello](images/hello.gif)
 
 Note:
@@ -75,7 +71,6 @@ Note:
 
 ----
 
-<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
 ## Living Styleguide
 
 Note:
@@ -83,7 +78,6 @@ Note:
 
 ----
 
-<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
 ## Living Styleguide
 
  - Creates a common design language
@@ -96,7 +90,6 @@ Note:
 
 ----
 
-<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
 ![Image of UX/Marketing team's work](images/user-experience-team.png)
 
 Note:
@@ -504,7 +497,24 @@ Note:
 
 ---
 
-<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
 ## Conclusion
 
-> We're around, come say hi (and ask questions)
+- We're here to help!
+- Please let us know if you're interested in getting involved in the CoE
+
+----
+
+#### Drop us a line!
+
+> Brad Pearson
+> [bpearson@netjets.com](mailto:bpearson@netjets.com)
+
+> Caitlin Steinert
+> [csteinert@base2.io](mailto:csteinert@base2.io)
+
+> Drew Miller
+> [dmiller@base2.io](mailto:dmiller@base2.io)
+
+----
+
+# Questions?

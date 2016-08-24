@@ -1,5 +1,5 @@
 {
-    "backgroundTransition": "fade",
+    "backgroundTransition": "none",
     "controls": true,
     "progress": true,
     "transition": "convex"
