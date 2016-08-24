@@ -45,31 +45,101 @@ Note:
 Note:
 - Communication is tough, especially across disciplines
 - The way that we as developers think of UI components can often differ wildly from how designers think about them
-- One way to find common ground is to break designs down into components and set standards around them
- - maybe show some form fields, buttons
+- Lots of emails fly back and forth about padding, font sizes, and colors
+- This effects our productivity and can cause friction between teams
 
 ----
 
-## Living Styleguide
-
- - Creates a common design language
- - Composing a UI from the ground up
+![Image of UX/Marketing team's work](images/user-experience-team.png)
 
 Note:
-- Once we have the basic components of a design figured out, we can use them as building blocks for larger structures in our apps
- - show the form fields assembled into a form
-- Here's an example of how we're building out components for the ETM Proof of Concept we're working on
- - show the inventory list components separately and together
+- The UX/Marketing team is hard at work generating new and unified designs for the components across applications
+- There are a *lot* of components in the suite of applications, so this is an evolving piece of work
+- The comps from UX/Marketing won't be the finished product, however...
 
 ----
 
 ## Living Styleguide
 
  - Creates a common design language
- - Composing a UI from the ground up
- - How will Styleguide-driven development help NetJets
+ - Compose a UI from the ground up
 
-> The thrilling conclusion!
+Note:
+- As they create guidelines, we are simultaneously translating them into the Living Styleguide
+
+----
+
+![Image of styleguide button](images/button.png)
+
+Note:
+- This is a screenshot of the Living Styleguide that shows the default styles for a basic button element
+
+
+----
+
+![Image of colors](images/colors.png)
+
+Note:
+- The Living Styleguide is built entirely in HTML, Sass, and Javascript
+- The Sass that is applied to the styleguide is the same Sass that can be used in any company app
+- The whole package will live on the CDN eventually so that it's accessible to all teams
+
+----
+
+![Image of styleguide icon](images/icon.png)
+
+Note:
+- The HTML that it's built from is also pulled into the Styleguide so that developers can see what attributes are required...
+
+----
+
+![Image of styleguide inventory list](images/inventory-list.png)
+
+Note:
+- ...which becomes especially useful as we group elements into more complex components
+
+----
+
+## Living Styleguide
+
+ - Creates a common design language
+ - Compose a UI from the ground up
+ - Styleguide-driven development
+
+Note:
+So I hear you say, Ok lady, that sounds cool and all, but how's this going to help me in my job, and NetJets in general? How am I even going to use this thing?
+Goals of this project include, but are not limited to...
+
+----
+
+![Image of styleguide flight pair](images/flight-pair.png)
+
+Note:
+...creating markup and styles that are custom-tailored to the NetJets brand and apps...
+
+----
+
+![Image of HTML5 and CSS3 logos](http://www.bobbyberberyan.com/wp-content/uploads/2012/03/HTML5CSS3Logos.svg)
+
+Note:
+...promoting and facilitating the use of the latest and greatest features in HTML and CSS...
+
+----
+
+####Less of this
+
+![Image of machine mass producing crayons](https://i.kinja-img.com/gawker-media/image/upload/s--e8JjQnyR--/c_fit,fl_progressive,q_80,w_636/19dg5vejfp529gif.gif)
+
+Note:
+...reducing the amount of repeated work required as apps begin to switch over to the new design...
+
+----
+
+####More of this
+
+![Image of a pit crew](https://media.giphy.com/media/MAQR6SBvKGQ5a/giphy.gif)
+
+...and facilitating teamwork and speed. 
 
 ---
 
