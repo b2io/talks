@@ -28,12 +28,18 @@ Presented by:
 
 ---
 
-## Living Styleguide
+![Image of a bear waving hello](images/hello.gif)
 
 Note:
 - Hello! 
 - I am a UX developer on the Center of Excellence team
 - One of my goals as part of this team is to facilitate collaboration and communication between designers and developers as we work together
+
+----
+
+## Living Styleguide
+
+Note:
 - One way I'm accomplishing this feat is by spearheading the Living Styleguide initiative
 
 ----
@@ -61,8 +67,8 @@ Note:
 
 ## Living Styleguide
 
- - Creates a common design language
- - Compose a UI from the ground up
+- Creates a common design language
+- Compose a UI from the ground up
 
 Note:
 - As they create guidelines, we are simultaneously translating them into the Living Styleguide
@@ -73,7 +79,6 @@ Note:
 
 Note:
 - This is a screenshot of the Living Styleguide that shows the default styles for a basic button element
-
 
 ----
 
@@ -102,9 +107,9 @@ Note:
 
 ## Living Styleguide
 
- - Creates a common design language
- - Compose a UI from the ground up
- - Styleguide-driven development
+- Creates a common design language
+- Compose a UI from the ground up
+- Styleguide-driven development
 
 Note:
 So I hear you say, Ok lady, that sounds cool and all, but how's this going to help me in my job, and NetJets in general? How am I even going to use this thing?
@@ -119,35 +124,36 @@ Note:
 
 ----
 
-![Image of HTML5 and CSS3 logos](http://www.bobbyberberyan.com/wp-content/uploads/2012/03/HTML5CSS3Logos.svg)
+![Image of HTML5 and CSS3 logos](images/shiny-web-toys.svg)
 
 Note:
 ...promoting and facilitating the use of the latest and greatest features in HTML and CSS...
 
 ----
 
-####Less of this
+#### Less of this
 
-![Image of machine mass producing crayons](https://i.kinja-img.com/gawker-media/image/upload/s--e8JjQnyR--/c_fit,fl_progressive,q_80,w_636/19dg5vejfp529gif.gif)
+![Image of machine mass producing crayons](images/crayons.gif)
 
 Note:
 ...reducing the amount of repeated work required as apps begin to switch over to the new design...
 
 ----
 
-####More of this
+#### More of this
 
-![Image of a pit crew](https://media.giphy.com/media/MAQR6SBvKGQ5a/giphy.gif)
+![Image of a pit crew](images/pit-crew.gif)
 
+Note:
 ...and facilitating teamwork and speed. 
 
 ---
 
 ## Improving the Developer Experience
 
- - Integrating a Styleguide component into your application
- - Unlocking the front-end ecosystem with webpack
- - A primer on unidirectional data flow with Redux
+- Integrating a Styleguide component into your application
+- Unlocking the front-end ecosystem with webpack
+- A primer on unidirectional data flow with Redux
 
 ----
 
