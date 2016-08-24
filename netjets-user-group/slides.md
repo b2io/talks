@@ -1,33 +1,71 @@
+<!-- .slide: data-background="./images/intro-slide-bg.png" data-background-size="1320px" -->
 # NetJets User Group
 
-Presented by:
+Presented by: <!-- .element: class="presented-by" -->
 
- * Brad Pearson (NetJets)
- * Caitlin Steinert (Base Two)
- * Drew Miller (Base Two)
-
----
-
-## Outline
-
- 1. Introduction
- 2. Building a Living Styleguide
- 3. Improving the Developer Experience
+ - Brad Pearson (NetJets) <!-- .element: class="presenter" -->
+ - Caitlin Steinert (Base Two) <!-- .element: class="presenter" -->
+ - Drew Miller (Base Two) <!-- .element: class="presenter" -->
 
 ---
 
+<!-- .slide: data-background="./images/slide-content-bg2.png" data-background-size="1420px" -->
 ## Introduction
 
-> Brad has some deep thoughts.
+- Future of web development at NetJets <!-- .element: class="fragment" -->
+- Web Center of Excellence <!-- .element: class="fragment" -->
+- ETM Redesign / Trip Management <!-- .element: class="fragment" -->
 
-----
-
-### One more thing...
-
-> What did he just say?!
+Note:
+- Hello everyone, thanks for coming to the user group meeting today
+- My name is Brad Pearson - For those who don't know me, I'm a tech lead and I've been working at NJ 4+ years on ETM
+- Today, we're going to be talking about the future of web development at NetJets
+- Included in that is a new group called the Web CoE
+- Web CoE is a group of people who are working to move the state of web development forward
+- One of the ways to do that is identifying projects to POC new tools and techniques
+- Current project is a partial ETM redesign where we are 'reinventing' trip management part of ETM
 
 ---
 
+<!-- .slide: data-background="./images/slide-content-bg2.png" data-background-size="1420px" -->
+## Commitment To Progress
+
+- Commit to improvement and staying current <!-- .element: class="fragment" -->
+- Everything is on the table <!-- .element: class="fragment" -->
+- Today is just a starting point <!-- .element: class="fragment" -->
+- Wiki, user group meetings, ad hoc meetings <!-- .element: class="fragment" -->
+
+Note:
+- The web CoE is about trying to research and implement things here at NJ to make web development better and stay current
+- This work is just the starting point - the web CoE goal is to continue to develop better tools and processes in the web dev space
+- Everything is on the table when it comes to how we make web development better
+- Ongoing communication about the web CoE initiatives will be via the wiki, future user group meetings as well as ad hoc department meetings
+
+---
+
+<!-- .slide: data-background="./images/slide-content-bg2.png" data-background-size="1420px" -->
+## Base Two
+
+- Expertise in web development <!-- .element: class="fragment" -->
+  - Also in pizza purchasing <!-- .element: class="fragment" -->
+- JavaScript, HTML, CSS, build process, best practices <!-- .element: class="fragment" -->
+- Caitlin - styleguide and implementation <!-- .element: class="fragment" -->
+- Drew - web app development <!-- .element: class="fragment" -->
+
+Note:
+- There's a lot of work and we decided to try and find someone outside of NetJets to help us with this effort
+- We found and have enlisted the help of a company called Base Two 
+- Software development agency here in Columbus and they also bought the pizza for today
+- The have expertise in core client side web development technologies 
+- Things like JS, HTML, styling, build processes, best practices 
+- Today we have two developers from base two who are working on our styleguide as well as the client side app development for etm redesign project
+- Introduce Caitlin Steinart and Drew Miller
+- Caitlin has been working more with the style side of the project and Drew on the app development side
+- I'll hand it over to Caitlin
+
+---
+
+<!-- .slide: data-background="./images/slide-content-bg2.png" data-background-size="1420px" -->
 ![Image of a bear waving hello](images/hello.gif)
 
 Note:
@@ -37,6 +75,7 @@ Note:
 
 ----
 
+<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
 ## Living Styleguide
 
 Note:
@@ -44,6 +83,7 @@ Note:
 
 ----
 
+<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
 ## Living Styleguide
 
  - Creates a common design language
@@ -56,6 +96,7 @@ Note:
 
 ----
 
+<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
 ![Image of UX/Marketing team's work](images/user-experience-team.png)
 
 Note:
@@ -149,32 +190,321 @@ Note:
 
 ---
 
-## Improving the Developer Experience
-
-- Integrating a Styleguide component into your application
-- Unlocking the front-end ecosystem with webpack
-- A primer on unidirectional data flow with Redux
+# Improving the Developer Experience
 
 ----
 
-### Integrating a Styleguide component
+## Developer Experience (DX)
 
-> Drew has some deep thoughts.
+Your productivity is a precious commodity; use it wisely.
+
+1. Focus on the task at hand
+2. Use purpose-built tools
+3. Reduce cognitive overhead
+
+Note: 
+- We talk a lot about UX, but let's talk about DX.
+- Let's talk about three concepts that help us be better developers.
 
 ----
 
-### Unlocking the ecosystem
+## Focus on the task at hand
 
-> Thoughts, we've got them.
+![Lioness Stalking](images/dx__focus.gif)
+
+Note:
+- First, let's talk about focus...
 
 ----
 
+### How does a Styleguide focus us?
+
+- Styleguide components are just markup and styles
+- Behavior comes from the platform implementation
+- We get to focus on the behavior, not the presentation
+
+Note: 
+- Consume the published styleguide artifacts we can,
+- Replicate what we can't consume,
+- Enhance with our framework of choice  
+
+----
+
+### Icon Component
+
+```html
+<span class="netjets-close"></span>
+```
+
+```scss
+[class^="netjets-"], [class*=" netjets-"] {
+	font-family: 'netjets-icons';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	speak: none;
+	text-transform: none;
+}
+
+.netjets-close::before {
+	content: "\e045";
+}
+```
+
+Note:
+- Here's some markup/styles from our Styleguide
+- Basic HTML for structure and CSS for presentation
+
+----
+
+### In Angular 2?
+
+```ts
+import '@netjets/styleguide/icon.scss';
+import { Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'nj-icon',
+  template: '<span class="netjets-{{name}}"></span>',
+})
+class IconComponent {
+  @Input()
+  public name: string;
+}
+
+export default IconComponent;
+```
+
+Note:
+- Implementing that in Angular 2,
+- We import the SASS directly,
+- We re-use the HTML indirectly
+
+----
+
+### In React?
+
+```js
+import '@netjets/styleguide/icon.scss';
+import React from 'react';
+
+const Icon = ({ name }) => (
+  <span className={`netjets-${name}`}></span>
+);
+
+export default Icon;
+```
+
+Note:
+- And again in React,
+- We import the SASS directly,
+- We re-use the HTML indirectly
+- Someone (Caitlin) has done the heavy lifting for us!
+
+----
+
+### But wait... what?!
+
+```ts
+// Annotations?!
+@Input()
+public name: string;
+```
+
+```js
+// Importing SASS files?!
+import '@netjets/styleguide/icon.scss';
+```
+
+```js
+// HTML-ish in our JS?!
+<span className={`netjets-${name}`}></span>
+```
+
+Note:
+- Those things aren't normal JavaScript!
+- You can't just do that... can you?
+
+----
+
+## Use purpose-built tools
+
+![Rube Goldberg Machine](images/dx__tools.gif)
+
+Note:
+- So now let's talk a bit about tools...
+- When we talk about tools, especially front-end tooling, you may be imaging something like this...
+
+----
+
+### webpack
+
+![webpack module bundler](images/dx__tools--webpack.jpg)
+
+Note:
+- There is an amazing diversity of awesome tools out there
+- Let's talk about one in particular, webpack
+- It's a very _powerful_ tool; which generally means useful and complicated
+
+----
+
+### webpack
+
+```js
+var path = require('path');
+
+module.exports = {
+  entry: {
+    app: './src/app.js',
+    vendor: './src/vendor.js',
+    polyfills: './src/polyfills.js', 
+  },
+  output: {
+    path: path.join(__dirname, 'dist'),
+    filename: '[name].[chunkhash].bundle.js',
+  },
+  // ...
+};
+```
+
+Note:
+- So what do we have going on here?
+- We point webpack at some entry points,
+- And we tell it how we want to output them,
+- webpack figures out the dependency graph for us.
+
+----
+
+### webpack
+
+```js
+module.exports = {
+  // ...
+  module: {
+    loaders: [
+      {
+        test: /\.jsx?/, // Match files with `.js` or `.jsx` extensions.
+        loader: 'babel', // Convert them from ES6 to our target.
+      },
+      {
+        test: /\.tsx?$/, // Match files with `.ts` or `.tsx` extensions.
+        loader: 'babel!ts', // Convert them from TypeScript to ES6, etc.
+      },
+    ],
+  },
+};
+```
+
+Note:
+- Now we're in another section of our webpack.config.js file.
+- We're telling webpack what types of files we expect to see,
+- And what to do with them once we find them.
+
+----
+
+### webpack
+
+- webpack is purpose-built to efficiently build web apps
+- It unlocks an entire ecosytem of tools for us to use
+
+Note:
+- SASS, TypeScript, ES6, and more...
+
+----
+
+## Reduce cognitive overhead
+
+![Flux Capacitor](images/dx__data.gif)
+
+Note:
+- Cognitive overhead? That's a little vague...
+- What are we talking about here?
+
+----
+
+### Cognitive overhead
+
+> Logical connections or jumps your brain has to make in order to understand or contextualize the thing you’re looking at.
+
+-David Demaree, Product Manager at Adobe
+
+Note:
+- This quote is in the context of UX.
+- But let's talk about DX.
+- How much do you have to hold in your head to implement a feature? How about to fix a bug?
+
+----
+
+### In the beginning...
+
+![Simple Data Flow](images/dx__data--simple.png)
+
+Note:
+- So you're starting a greenfield project,
+- You've got straightforward use cases,
+- Things are going to be great this time!
+- Let's describe the flow of data in our system.
+
+----
+
+### In the end...
+
+![Complex Data Model](images/dx__data--complex.png)
+
+Note:
+- And then, innevitably, we get here...
+- Anyone used a lot of two-way data-binding in Angular 1?
+- You have a bug over here, but the actual cause is waaaay over there....
+
+----
+
+<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px" -->
 ### Unidirectional data flow
 
-> The thrilling conclusion!
+- A lot of complexity is in the flow of our data
+- If we can describe that flow more simply, we can reduce cognitive overhead
+
+Note:
+- A lot of thought and research has gone into this problem.
+- One of the popular solutions is a pattern called Flux; which is Facebook taking an old idea and pretending it's new.
+
+----
+
+### Flux Architecture
+
+![Flux Architecture Diagram](images/dx__data--flux-1.png)
+
+Note:
+- To sum it up, we have the state of our app in our Store
+- That drives how we render our View(s)
+- Actions are dispatched which cause mutations in our Store
+
+----
+
+### Flux Architecture
+
+![Flux Architecture Diagram](images/dx__data--flux-2.png)
+
+Note:
+- You might have Actions coming from a View, or from a background-job, etc
+- So whether or not this is really _new_, it's useful.
+- If we implement this, we have to hold much less in our heads to make a change.
+
+----
+
+### "But we're not using Flux!"
+
+- This is just one way to reduce cognitive overhead
+- Improve the DX on your project when you can
+
+Note:
+- Over the lifetime of a product, maintenance costs dramatically outweigh initial investment.
+- Do that developer 2 years from now a favor and make your project easy to reason about, easy to enhance, easy to fix.
 
 ---
 
+<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px"-->
 ## Conclusion
 
 > We're around, come say hi (and ask questions)
