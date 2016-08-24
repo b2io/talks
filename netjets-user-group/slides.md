@@ -1,5 +1,5 @@
-<!-- .slide: data-background="./images/intro-slide-bg.png" data-background-size="1320px" -->
-# NetJets User Group
+<!-- .slide: data-background="./images/intro-slide-bg.png" data-background-size="1250px" -->
+## NetJets User Group
 
 Presented by: <!-- .element: class="presented-by" -->
 
@@ -25,7 +25,7 @@ Note:
 - One of the ways to do that is identifying projects to POC new tools and techniques
 - Current project is a partial ETM redesign where we are 'reinventing' trip management part of ETM
 
----
+----
 
 <!-- .slide: data-background="./images/slide-content-bg2.png" data-background-size="1420px" -->
 ## Commitment To Progress
@@ -41,7 +41,7 @@ Note:
 - Everything is on the table when it comes to how we make web development better
 - Ongoing communication about the web CoE initiatives will be via the wiki, future user group meetings as well as ad hoc department meetings
 
----
+----
 
 <!-- .slide: data-background="./images/slide-content-bg2.png" data-background-size="1420px" -->
 ## Base Two

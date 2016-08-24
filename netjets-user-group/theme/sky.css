@@ -297,3 +297,18 @@ body {
 /*********************************************
  * OVERRIDES
  *********************************************/
+body{
+  background: white;
+}
+
+#netjets-user-group{
+  color: white;
+}
+
+.presented-by{
+  color: white;
+}
+
+.presenter{
+  color: white;
+}
