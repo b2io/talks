@@ -138,14 +138,17 @@ Note:
 
 ----
 
-## Living Styleguide
+## Living Style Guide
 
 Note:
-- One way I'm accomplishing this feat is by spearheading the Living Styleguide initiative
+- So we just heard from the UX/Marketing team about their initiative to standardize the design experience across apps
+- The Center of Excellence team is focusing on standardizing the development experience as well
+- My area of expertise is writing clean, semantic, standardized HTML and CSS
+- So my contribution to this effort is the creation of a Living Style Guide
 
 ----
 
-## Living Styleguide
+## Living Style Guide
 
  - Creates a common design language
 
@@ -154,74 +157,92 @@ Note:
 - The way that we as developers think of UI components can often differ wildly from how designers think about them
 - Lots of emails fly back and forth about padding, font sizes, and colors
 - This effects our productivity and can cause friction between teams
+- My goal is to reduce rework and communication errors by providing interactive documentation (living style guide)
 
 ----
 
 ![Image of UX/Marketing team's work](images/user-experience-team.png)
 
 Note:
-- The UX/Marketing team is hard at work generating new and unified designs for the components across applications
-- There are a *lot* of components in the suite of applications, so this is an evolving piece of work
-- The comps from UX/Marketing won't be the finished product, however...
+- I'll use buttons as an example of this process.
+- So, as the UX/Marketing team continues their work on creating comps...
 
 ----
 
-## Living Styleguide
+![Image of style guide Sass](images/button-sass.png)
+
+Note:
+- ...I am distilling their designs and instructional information into semantic markup and flexible styling
+- This is an example of the behind-the-scenes work that will go into creating button styles
+- This is written in Sass, which is an industry-standard CSS extension language that adds helpful functionality like variables and functions to speed up and simplify the style-writing process.
+
+----
+
+![Image of style guide CSS](images/button-css.png)
+
+Note:
+- That Sass is compiled into the CSS that will form a base stylesheet that can be used across applications.
+
+----
+
+![Image of style guide buttons](images/living-styleguide-buttons.png)
+
+Note:
+- It is also being applied to our Living Style Guide, which shows the CSS in action layered on top of semantic markup
+- The Living Style Guide also includes instructional text that details where elements should be used, and when
+- This guide will be available to all developers on the CDN (it's actually already there)
+
+----
+
+## Living Style Guide
 
 - Creates a common design language
 - Compose a UI from the ground up
 
 Note:
-- As they create guidelines, we are simultaneously translating them into the Living Styleguide
-
-----
-
-![Image of styleguide button](images/button.png)
-
-Note:
-- This is a screenshot of the Living Styleguide that shows the default styles for a basic button element
+- So those were just the button elements
+- Of course, there's a lot more that goes into a user inter interface
+- But instead of creating the markup and styles for entire views at a time, we're working on them at the component level
 
 ----
 
 ![Image of colors](images/colors.png)
 
 Note:
-- The Living Styleguide is built entirely in HTML, Sass, and Javascript
-- The Sass that is applied to the styleguide is the same Sass that can be used in any company app
-- The whole package will live on the CDN eventually so that it's accessible to all teams
+- We start with the basics like buttons, colors...
 
 ----
 
-![Image of styleguide icon](images/icon.png)
+![Image of style guide icon](images/icon.png)
 
 Note:
-- The HTML that it's built from is also pulled into the Styleguide so that developers can see what attributes are required...
+- ...and icons and work up from there, putting all the pieces together, to form more complex components like...
 
 ----
 
-![Image of styleguide inventory list](images/inventory-list.png)
+![Image of style guide inventory list](images/inventory-list.png)
 
 Note:
-- ...which becomes especially useful as we group elements into more complex components
+- ...this inventory list that's being used on the catering review screens.
 
 ----
 
-## Living Styleguide
+## Living Style Guide
 
 - Creates a common design language
 - Compose a UI from the ground up
 - Styleguide-driven development
 
 Note:
-So I hear you say, Ok lady, that sounds cool and all, but how's this going to help me in my job, and NetJets in general? How am I even going to use this thing?
+So I hear you say, Ok lady, that sounds cool and all, but how's this going to help NetJets developers? Why not just use Bootstrap like we have been?
 Goals of this project include, but are not limited to...
 
 ----
 
-![Image of styleguide flight pair](images/flight-pair.png)
+![Image of style guide flight pair](images/flight-pair.png)
 
 Note:
-...creating markup and styles that are custom-tailored to the NetJets brand and apps...
+...creating markup and styles that are custom-tailored to the NetJets experience (in a way that you'd never get out of a general library like Bootstrap)...
 
 ----
 
@@ -232,7 +253,7 @@ Note:
 
 ----
 
-#### Less of this
+### Less of this
 
 ![Image of machine mass producing crayons](images/crayons.gif)
 
@@ -241,12 +262,18 @@ Note:
 
 ----
 
-#### More of this
+### More of this
 
 ![Image of a pit crew](images/pit-crew.gif)
 
 Note:
 ...and facilitating teamwork and speed.
+
+----
+
+## Check it out
+
+cdn.netjets.com/libs/netjets-style-toolkit
 
 ---
 
