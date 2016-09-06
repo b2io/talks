@@ -293,7 +293,18 @@ Note:
 - And again in React,
 - We import the SASS directly,
 - We re-use the HTML indirectly
-- Someone (Caitlin) has done the heavy lifting for us!
+- The heavy lifting has already been done for us!
+
+----
+
+### It's Alive!
+
+![React Storybook](images/dx__storybook.gif)
+
+Note:
+- Once implemented, we can present the component in an interactive context
+- Sometimes you can't really give feedback until you can see and touch a thing
+- This technique lets all the stakeholders get to that moment faster
 
 ----
 
@@ -317,6 +328,7 @@ import '@netjets/styleguide/icon.scss';
 
 Note:
 - Those things aren't normal JavaScript!
+- Maybe they're things we wish we could do...
 - You can't just do that... can you?
 
 ----
@@ -377,12 +389,12 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.jsx?/, // Match files with `.js` or `.jsx` extensions.
-        loader: 'babel', // Convert them from ES6 to our target.
+        test: /\.jsx?/, // Match files ending with .js or .jsx
+        loader: 'babel', // Convert from ES6 to ES5
       },
       {
-        test: /\.tsx?$/, // Match files with `.ts` or `.tsx` extensions.
-        loader: 'babel!ts', // Convert them from TypeScript to ES6, etc.
+        test: /\.tsx?$/, // Match files ending with .ts or .tsx
+        loader: 'babel!ts', // Convert from TS to ES6, ES5
       },
     ],
   },
@@ -452,7 +464,6 @@ Note:
 
 ----
 
-<!-- .slide: data-background="./images/slide-content-bg.png" data-background-size="1320px" -->
 ### Unidirectional data flow
 
 - A lot of complexity is in the flow of our data
