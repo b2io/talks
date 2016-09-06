@@ -54,10 +54,10 @@ Note:
 
 Note:
 - There's a lot of work and we decided to try and find someone outside of NetJets to help us with this effort
-- We found and have enlisted the help of a company called Base Two 
+- We found and have enlisted the help of a company called Base Two
 - Software development agency here in Columbus and they also bought the pizza for today
-- The have expertise in core client side web development technologies 
-- Things like JS, HTML, styling, build processes, best practices 
+- The have expertise in core client side web development technologies
+- Things like JS, HTML, styling, build processes, best practices
 - Today we have two developers from base two who are working on our styleguide as well as the client side app development for etm redesign project
 - Introduce Caitlin Steinart and Drew Miller
 - Caitlin has been working more with the style side of the project and Drew on the app development side
@@ -65,11 +65,76 @@ Note:
 
 ---
 
+# NetJets Style Guide
+
+> Create a consistent visual language of UI components for use by designers and
+developers during the discovery and design phases of NetJets applications.
+
+----
+
+## Internal Systems Audit: Visual Language
+
+![Styles](images/ux/styles-zoomed.png)
+
+Note:
+For this audit, Contrail, ETM, Flight Control/Flight Release, Line Planning,
+MXNet, OCMS, Online Payments, Pulse, and Subscription Center were examined for
+usage and styling of the following items.
+
+----
+
+## Internal Systems Audit: User Interactions
+
+#### Consistency and Standards
+
+----
+
+> "Users should not have to wonder whether different words, situations, or
+actions mean the same thing."
+>
+> Jakob Nielson
+
+![User Interactions](images/ux/user-interactions.png)
+
+----
+
+## Implementation Examples
+
+#### Clear Visual Language / Consistent Patterns and Interactions
+
+![Implementations](images/ux/implementations.png)
+
+----
+
+## Process & Workflow
+
+#### Ongoing and Cross Disciplinary
+
+![Process & Workflow](images/ux/process-workflow.png)
+
+----
+
+## UX/UI Efficiency Gains
+
+How and where will a styleguide help with efficiency?
+
+* Designing from known patterns
+* Cross project design
+* Streamline QA process
+
+----
+
+## Style Guide: Scope & Timeline
+
+![Scope & Timeline](images/ux/scope-timeline.png)
+
+---
+
 <!-- .slide: data-background="./images/slide-content-bg2.png" data-background-size="1420px" -->
 ![Image of a bear waving hello](images/hello.gif)
 
 Note:
-- Hello! 
+- Hello!
 - I am a UX developer on the Center of Excellence team
 - One of my goals as part of this team is to facilitate collaboration and communication between designers and developers as we work together
 
@@ -186,7 +251,7 @@ Note:
 ![Image of a pit crew](images/pit-crew.gif)
 
 Note:
-...and facilitating teamwork and speed. 
+...and facilitating teamwork and speed.
 
 ---
 
@@ -202,7 +267,7 @@ Your productivity is a precious commodity; use it wisely.
 2. Use purpose-built tools
 3. Reduce cognitive overhead
 
-Note: 
+Note:
 - We talk a lot about UX, but let's talk about DX.
 - Let's talk about three concepts that help us be better developers.
 
@@ -223,7 +288,7 @@ Note:
 - Behavior comes from the platform implementation
 - We get to focus on the behavior, not the presentation
 
-Note: 
+Note:
 - Consume the published styleguide artifacts we can,
 - Replicate what we can't consume,
 - Enhance with our framework of choice  
@@ -358,7 +423,7 @@ module.exports = {
   entry: {
     app: './src/app.js',
     vendor: './src/vendor.js',
-    polyfills: './src/polyfills.js', 
+    polyfills: './src/polyfills.js',
   },
   output: {
     path: path.join(__dirname, 'dist'),
