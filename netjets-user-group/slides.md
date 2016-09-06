@@ -26,12 +26,33 @@ Note:
 
 ----
 
-## Commitment To Progress
+## Web App Development
 
-- Commit to improvement and staying current <!-- .element: class="fragment" -->
-- Everything is on the table <!-- .element: class="fragment" -->
-- Today is just a starting point <!-- .element: class="fragment" -->
-- Wiki, user group meetings, ad hoc meetings <!-- .element: class="fragment" -->
+- 'Web Apps' is a broad category <!-- .element: class="fragment" -->
+- 'Single Page Apps' are the complex web apps we develop <!-- .element: class="fragment" -->
+- Complexity comes from combination of technologies <!-- .element: class="fragment" -->
+- JavaScript isn't JavaScript anymore, CSS isn't CSS anymore, HTML is HTML anymore <!-- .element: class="fragment" -->
+- Today's web app development is unique <!-- .element: class="fragment" -->
+
+Note:
+- web development is a broad category
+- historically it's been lots of different things
+- single page apps are the complex apps we spend most time on
+- Complexity = JS, TypeScript, ES5, ES6, babel, LESS, SASS, directives and components defined in app syntax
+- Web app development is a unique niche of software engineering  
+
+----
+
+## Web UI CoE
+
+- Why? <!-- .element: class="fragment" -->
+  - Because of the unique aspect of web dev <!-- .element: class="fragment" -->
+- What? <!-- .element: class="fragment" -->
+  - Commit to improvement and staying current <!-- .element: class="fragment" -->
+- How? <!-- .element: class="fragment" -->
+  - Everything is on the table <!-- .element: class="fragment" -->
+  - Today is just a starting point <!-- .element: class="fragment" -->
+  - Wiki, user group meetings, ad hoc meetings <!-- .element: class="fragment" -->
 
 Note:
 - The web CoE is about trying to research and implement things here at NJ to make web development better and stay current
@@ -44,7 +65,6 @@ Note:
 ## Base Two
 
 - Expertise in web development <!-- .element: class="fragment" -->
-  - Also in pizza purchasing <!-- .element: class="fragment" -->
 - JavaScript, HTML, CSS, build process, best practices <!-- .element: class="fragment" -->
 - Caitlin - styleguide and implementation <!-- .element: class="fragment" -->
 - Drew - web app development <!-- .element: class="fragment" -->
