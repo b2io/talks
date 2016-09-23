@@ -3,9 +3,10 @@
 
 Presented by: <!-- .element: class="presented-by" -->
 
- - Brad Pearson (NetJets) <!-- .element: class="presenter" -->
- - Caitlin Steinert (Base Two) <!-- .element: class="presenter" -->
- - Drew Miller (Base Two) <!-- .element: class="presenter" -->
+- Brad Pearson (NetJets) <!-- .element: class="presenter" -->
+- James Weaver (NetJets) <!-- .element: class="presenter" -->
+- Caitlin Steinert (Base Two) <!-- .element: class="presenter" -->
+- Drew Miller (Base Two) <!-- .element: class="presenter" -->
 
 ---
 
@@ -313,17 +314,20 @@ cdn.netjets.com/libs/netjets-style-toolkit
 
 ---
 
-# Improving the Developer Experience
+![Image of a whale waving hello](images/whale-hello-there.gif)
+
+Note:
+- Hi there!
+- I'm Drew, and I'm a Developer on the Center of Excellence team
+- One of my goals on the team is to help establish patterns and practices that make developers more productive (and happy!)
 
 ----
 
 ## Developer Experience (DX)
 
-Your productivity is a precious commodity; use it wisely.
-
-1. Focus on the task at hand
-2. Use purpose-built tools
-3. Reduce cognitive overhead
+1. Focus on the actual task at hand  <!-- .element: class="fragment" -->
+2. Use purpose-built tools  <!-- .element: class="fragment" -->
+3. Reduce cognitive overhead  <!-- .element: class="fragment" -->
 
 Note:
 - We talk a lot about UX, but let's talk about DX.
@@ -331,19 +335,25 @@ Note:
 
 ----
 
-## Focus on the task at hand
-
-![Lioness Stalking](images/dx__focus.gif)
+## 1. Focus on the task at hand
 
 Note:
 - First, let's talk about focus...
 
 ----
 
-### How does a Styleguide focus us?
+![Lioness Stalking](images/dx__focus.gif)
 
-- Styleguide components are just markup and styles
-- Behavior comes from the platform implementation
+Note:
+- In this context I'm talking about focusing on the _unique_ problem at hand
+- How can we leverage work that's already been done to iterate faster
+
+----
+
+### Can a Styleguide focus us?
+
+- Styleguide components are markup and styles
+- Behavior comes from the implementation
 - We get to focus on the behavior, not the presentation
 
 Note:
@@ -381,6 +391,26 @@ Note:
 
 ----
 
+### In Angular 1?
+
+```js
+import '@netjets/styleguide/icon.scss';
+
+const IconComponent = {
+  bindings: { name: '<' },
+  template: `<span class="netjets-{{name}}"></span>`,
+};
+
+export default IconComponent;
+```
+
+Note:
+- Implementing that in Angular 1,
+- We import the SASS directly,
+- We re-use the HTML
+
+----
+
 ### In Angular 2?
 
 ```ts
@@ -392,7 +422,7 @@ import { Component, Input } from '@angular/core';
   template: '<span class="netjets-{{name}}"></span>',
 })
 class IconComponent {
-  @Input()
+  @Input() 
   public name: string;
 }
 
@@ -400,9 +430,7 @@ export default IconComponent;
 ```
 
 Note:
-- Implementing that in Angular 2,
-- We import the SASS directly,
-- We re-use the HTML indirectly
+- And now in Angular 2...
 
 ----
 
@@ -420,21 +448,7 @@ export default Icon;
 ```
 
 Note:
-- And again in React,
-- We import the SASS directly,
-- We re-use the HTML indirectly
-- The heavy lifting has already been done for us!
-
-----
-
-### It's Alive!
-
-![React Storybook](images/dx__storybook.gif)
-
-Note:
-- Once implemented, we can present the component in an interactive context
-- Sometimes you can't really give feedback until you can see and touch a thing
-- This technique lets all the stakeholders get to that moment faster
+- And again in React...
 
 ----
 
@@ -463,17 +477,19 @@ Note:
 
 ----
 
-## Use purpose-built tools
+## 2. Use purpose-built tools
+
+Note:
+- So now let's talk a bit about tools...
+
+----
 
 ![Rube Goldberg Machine](images/dx__tools.gif)
 
 Note:
-- So now let's talk a bit about tools...
 - When we talk about tools, especially front-end tooling, you may be imaging something like this...
 
 ----
-
-### webpack
 
 ![webpack module bundler](images/dx__tools--webpack.jpg)
 
@@ -483,8 +499,6 @@ Note:
 - It's a very _powerful_ tool; which generally means useful and complicated
 
 ----
-
-### webpack
 
 ```js
 var path = require('path');
@@ -510,8 +524,6 @@ Note:
 - webpack figures out the dependency graph for us.
 
 ----
-
-### webpack
 
 ```js
 module.exports = {
@@ -548,9 +560,32 @@ Note:
 
 ----
 
-## Reduce cognitive overhead
+![react-storybook](images/dx__tools--react-storybook.png)
 
-![Flux Capacitor](images/dx__data.gif)
+Note:
+- Sometimes you can't really give feedback until you can see and touch a thing.
+- React Storybook is a tool that lets all the stakeholders get to that moment faster.
+
+----
+
+![React Storybook](images/dx__storybook--simple.gif)
+
+Note:
+- As a developer, I can create interactive examples of my components.
+- These work even during development, so I can see the effect of my changes instantly.
+- I can also share these with my team to get more valuable feedback earlier in the cycle.
+
+----
+
+![React Storybook](images/dx__storybook--complex.gif)
+
+Note:
+- So from a simple Icon, to a complex DatePicker, we can develop and test our components visually.
+- And we can publish the output as living examples and documentation much like the Styleguide. 
+
+----
+
+## 3. Reduce cognitive overhead
 
 Note:
 - Cognitive overhead? That's a little vague...
@@ -558,11 +593,18 @@ Note:
 
 ----
 
+![Flux Capacitor](images/dx__data.gif)
+
+Note:
+- For any Back to the Future fans, we've got a little foreshadowing here...
+
+----
+
 ### Cognitive overhead
 
-> Logical connections or jumps your brain has to make in order to understand or contextualize the thing you’re looking at.
-
--David Demaree, Product Manager at Adobe
+> "Logical connections or jumps your brain has to make in order to understand or contextualize the thing you’re looking at."
+>
+> David Demaree
 
 Note:
 - This quote is in the context of UX.
@@ -570,8 +612,6 @@ Note:
 - How much do you have to hold in your head to implement a feature? How about to fix a bug?
 
 ----
-
-### In the beginning...
 
 ![Simple Data Flow](images/dx__data--simple.png)
 
@@ -582,8 +622,6 @@ Note:
 - Let's describe the flow of data in our system.
 
 ----
-
-### In the end...
 
 ![Complex Data Model](images/dx__data--complex.png)
 
@@ -605,8 +643,6 @@ Note:
 
 ----
 
-### Flux Architecture
-
 ![Flux Architecture Diagram](images/dx__data--flux-1.png)
 
 Note:
@@ -615,8 +651,6 @@ Note:
 - Actions are dispatched which cause mutations in our Store
 
 ----
-
-### Flux Architecture
 
 ![Flux Architecture Diagram](images/dx__data--flux-2.png)
 
@@ -627,7 +661,7 @@ Note:
 
 ----
 
-### "But we're not using Flux!"
+### But wait, there's more!
 
 - This is just one way to reduce cognitive overhead
 - Improve the DX on your project when you can
@@ -647,14 +681,10 @@ Note:
 
 #### Drop us a line!
 
-> Brad Pearson
-> [bpearson@netjets.com](mailto:bpearson@netjets.com)
-
-> Caitlin Steinert
-> [csteinert@base2.io](mailto:csteinert@base2.io)
-
-> Drew Miller
-> [dmiller@base2.io](mailto:dmiller@base2.io)
+- Brad Pearson ([bpearson@netjets.com](mailto:bpearson@netjets.com))
+- James Weaver ([jweaver@netjets.com](mailto:jweaver@netjets.com))
+- Caitlin Steinert ([csteinert@base2.io](mailto:csteinert@base2.io))
+- Drew Miller ([dmiller@base2.io](mailto:dmiller@base2.io))
 
 ----
 
