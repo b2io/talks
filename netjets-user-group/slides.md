@@ -13,7 +13,7 @@ Presented by: <!-- .element: class="presented-by" -->
 
 - Future of web development at NetJets <!-- .element: class="fragment" -->
 - Web Center of Excellence <!-- .element: class="fragment" -->
-- ETM Redesign / Trip Management <!-- .element: class="fragment" -->
+- App server to browser <!-- .element: class="fragment" -->
 
 Note:
 - Hello everyone, thanks for coming to the user group meeting today
@@ -21,8 +21,7 @@ Note:
 - Today, we're going to be talking about the future of web development at NetJets
 - Included in that is a new group called the Web CoE
 - Web CoE is a group of people who are working to move the state of web development forward
-- One of the ways to do that is identifying projects to POC new tools and techniques
-- Current project is a partial ETM redesign where we are 'reinventing' trip management part of ETM
+- Domain of CoE is app server to browser in context of web apps - not web services
 
 ----
 
@@ -38,27 +37,31 @@ Note:
 - web development is a broad category
 - historically it's been lots of different things
 - single page apps are the complex apps we spend most time on
-- Complexity = JS, TypeScript, ES5, ES6, babel, LESS, SASS, directives and components defined in app syntax
-- Web app development is a unique niche of software engineering  
+- Complexity = JS/TypeScript/ES2016/babel - CSS/LESS/SASS - HTML/NG Directives/JSX/Styleguide components defined in app syntax
+- Web app development is a unique niche of software engineering
 
 ----
 
 ## Web UI CoE
 
 - Why? <!-- .element: class="fragment" -->
+  - Space is new and changes happen fast! <!-- .element: class="fragment" -->
   - Because of the unique aspect of web dev <!-- .element: class="fragment" -->
 - What? <!-- .element: class="fragment" -->
   - Commit to improvement and staying current <!-- .element: class="fragment" -->
-- How? <!-- .element: class="fragment" -->
   - Everything is on the table <!-- .element: class="fragment" -->
+- How? <!-- .element: class="fragment" -->
+  - Tech Radar and POC's <!-- .element: class="fragment" -->
   - Today is just a starting point <!-- .element: class="fragment" -->
   - Wiki, user group meetings, ad hoc meetings <!-- .element: class="fragment" -->
 
 Note:
 - The web CoE is about trying to research and implement things here at NJ to make web development better and stay current
+- Everything: From frameworks to tools to learning to process
 - This work is just the starting point - the web CoE goal is to continue to develop better tools and processes in the web dev space
 - Everything is on the table when it comes to how we make web development better
 - Ongoing communication about the web CoE initiatives will be via the wiki, future user group meetings as well as ad hoc department meetings
+- With that said, there's a lot of work and we decided to partner with experts to help us
 
 ----
 
@@ -66,11 +69,10 @@ Note:
 
 - Expertise in web development <!-- .element: class="fragment" -->
 - JavaScript, HTML, CSS, build process, best practices <!-- .element: class="fragment" -->
-- Caitlin - styleguide and implementation <!-- .element: class="fragment" -->
-- Drew - web app development <!-- .element: class="fragment" -->
+- Caitlin Steinert - styleguide and implementation <!-- .element: class="fragment" -->
+- Drew Miller - web app development <!-- .element: class="fragment" -->
 
 Note:
-- There's a lot of work and we decided to try and find someone outside of NetJets to help us with this effort
 - We found and have enlisted the help of a company called Base Two
 - Software development agency here in Columbus and they also bought the pizza for today
 - The have expertise in core client side web development technologies
@@ -78,7 +80,21 @@ Note:
 - Today we have two developers from base two who are working on our styleguide as well as the client side app development for etm redesign project
 - Introduce Caitlin Steinart and Drew Miller
 - Caitlin has been working more with the style side of the project and Drew on the app development side
-- I'll hand it over to Caitlin
+
+----
+
+## CoE WHYDFML?
+
+- Tech <!-- .element: class="fragment" -->
+  - Styleguide & Storybook <!-- .element: class="fragment" -->
+  - Building a new web app stack <!-- .element: class="fragment" -->
+- Process <!-- .element: class="fragment" -->
+  - Everything starts with UX <!-- .element: class="fragment" -->
+
+Note:
+- What have we done so far - lots of technical things that aren't yet ready
+- Comes together by all development starting with UX
+- Hand it over to James
 
 ---
 
@@ -333,7 +349,7 @@ Note:
 Note:
 - Consume the published styleguide artifacts we can,
 - Replicate what we can't consume,
-- Enhance with our framework of choice  
+- Enhance with our framework of choice
 
 ----
 
